@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.Interfaces
+namespace OnionArchitecture.Core.Interfaces
 {
     public interface IServiceLocator
     {

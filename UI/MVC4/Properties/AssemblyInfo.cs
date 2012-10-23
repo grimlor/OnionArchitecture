@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MVC4")]
+[assembly: AssemblyTitle("OnionArchitecture.MVC4")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Channel Intelligence")]
-[assembly: AssemblyProduct("MVC4")]
+[assembly: AssemblyProduct("OnionArchitecture.MVC4")]
 [assembly: AssemblyCopyright("Copyright © Channel Intelligence 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -17,3 +17,5 @@ decoupled from the rest of the application.
 
 The only references projects in this folder should have to other projects is to 
 Core and UI.
+
+Be sure to change the project's build target to the UI layer's bin folder.

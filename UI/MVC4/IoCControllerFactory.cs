@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MVC4
+namespace OnionArchitecture.MVC4
 {
     using Core.Entities;
 

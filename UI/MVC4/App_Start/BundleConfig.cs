@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace MVC4.App_Start
+namespace OnionArchitecture.MVC4.App_Start
 {
     public class BundleConfig
     {

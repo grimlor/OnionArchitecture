@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.Entities
+namespace OnionArchitecture.Core.Entities
 {
     using Interfaces;
 

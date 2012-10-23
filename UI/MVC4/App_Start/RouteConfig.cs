@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MVC4.App_Start
+namespace OnionArchitecture.MVC4.App_Start
 {
     public class RouteConfig
     {

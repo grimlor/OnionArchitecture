@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Tests.Controllers
+namespace OnionArchitecture.Tests.Controllers
 {
     using MVC4.Controllers;
 

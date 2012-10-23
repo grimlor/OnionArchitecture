@@ -17,3 +17,5 @@ should contain a ServiceLocator class used by the UI's IoCControllerFactory for
 dependency resolution. It should also contain the definition of the 
 IServiceLocator interface for the IoC container used by the 
 DependencyResolution project.
+
+Be sure to change the project's build target to the UI layer's bin folder.

@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using MVC4.Models;
 
-namespace MVC4.Controllers
+namespace OnionArchitecture.MVC4.Controllers
 {
+    using Models;
 
     [Authorize]
     public class AccountController : Controller
