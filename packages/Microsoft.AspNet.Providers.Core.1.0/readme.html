@@ -1,0 +1,1837 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=unicode">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="UniversalProviders_readme_files/filelist.xml">
+<title>ASP.NET Universal Providers Prerelease Notes</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Hao Kung</o:Author>
+  <o:LastAuthor>mpope</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>9</o:TotalTime>
+  <o:Created>2011-07-05T17:25:00Z</o:Created>
+  <o:LastSaved>2012-01-10T22:57:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>2442</o:Words>
+  <o:Characters>13925</o:Characters>
+  <o:Company>Microsoft Corporation</o:Company>
+  <o:Lines>116</o:Lines>
+  <o:Paragraphs>32</o:Paragraphs>
+  <o:CharactersWithSpaces>16335</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>120</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="UniversalProviders_readme_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="UniversalProviders_readme_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--div.MAIN
+	{left:1.5in;
+	position:absolute;
+	top:.75in;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-believe-normal-left:yes;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:-.2in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	margin-top:.25in;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:-.2in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	color:darkgreen;}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:darkgreen;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:Consolas;}
+p.ms-prof-main, li.ms-prof-main, div.ms-prof-main
+	{mso-style-name:ms-prof-main;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:white;
+	border:none;
+	mso-border-top-alt:solid black .75pt;
+	mso-border-left-alt:solid black .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+p.ms-prof-tl, li.ms-prof-tl, div.ms-prof-tl
+	{mso-style-name:ms-prof-tl;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:black;
+	border:none;
+	mso-border-bottom-alt:solid black .75pt;
+	mso-border-right-alt:solid black .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+p.ms-prof-left, li.ms-prof-left, div.ms-prof-left
+	{mso-style-name:ms-prof-left;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:white;
+	border:none;
+	mso-border-bottom-alt:solid black .75pt;
+	mso-border-right-alt:solid black .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+p.ms-prof-top, li.ms-prof-top, div.ms-prof-top
+	{mso-style-name:ms-prof-top;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:black;
+	border:none;
+	mso-border-bottom-alt:solid black .75pt;
+	mso-border-right-alt:solid black .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+p.ms-prof-even, li.ms-prof-even, div.ms-prof-even
+	{mso-style-name:ms-prof-even;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:white;
+	border:none;
+	mso-border-bottom-alt:solid black .75pt;
+	mso-border-right-alt:solid black .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 0in 0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+p.highlight, li.highlight, div.highlight
+	{mso-style-name:highlight;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:yellow;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+span.highlight1
+	{mso-style-name:highlight1;
+	mso-style-unhide:no;
+	background:yellow;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:293102848;
+	mso-list-template-ids:80117212;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:532381547;
+	mso-list-template-ids:-384399224;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:974212240;
+	mso-list-template-ids:-515839240;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1828012590;
+	mso-list-template-ids:930494578;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1959098615;
+	mso-list-template-ids:-168638890;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:§;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l5
+	{mso-list-id:2051301851;
+	mso-list-template-ids:-932177956;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><![if mso 9]>
+<style>
+p.MsoNormal
+	{margin-left:1.0in;}
+</style>
+<![endif]><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in;margin-left:
+1.0in'>
+
+<div class=WordSection1>
+
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>ASP.NET Universal
+Providers<o:p></o:p></span></h1>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Last
+update: 11 January 2012</span></p>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>The <a
+href="http://msdn.microsoft.com/en-us/library/system.web.security.sqlmembershipprovider.aspx">SqlMembershipProvider</a>,
+<a
+href="http://msdn.microsoft.com/en-us/library/system.web.security.sqlroleprovider.aspx">SqlRoleProvider</a>,
+<a
+href="http://msdn.microsoft.com/en-us/library/system.web.profile.sqlprofileprovider.aspx">SqlProfileProvider</a>
+classes that shipped in ASP.NET through version 4 support only Microsoft SQL
+Server and Microsoft SQL Server Express. They do not support newer offerings
+such as <a href="http://msdn.microsoft.com/en-us/library/ee336241.aspx">Microsoft
+SQL Azure</a> and <a
+href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=033cfb76-5382-44fb-bc7e-b3c8174832e2">Microsoft
+SQL Server Compact</a>. <o:p></o:p></span></p>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>ASP.NET
+Universal Providers have been created in order to extend support to all
+editions of SQL Server 2005 and later and to SQL Azure. If you use these
+providers to develop your application, the application will be ready for cloud
+environments like Azure.<o:p></o:p></span></p>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Other than
+supporting additional storage options, the providers work like the existing
+SQL-based providers. Except as noted below, using ASP.NET Universal Providers
+requires no change in any of your applications.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="#Installing_and_Configuring_ASP.NET_Univ">Installing and Configuring
+ASP.NET Universal Providers</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a href="#Selecting_a_Data_Store">Selecting
+a Data Store</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="#Storing_Data_in_Session_State_using_ASP">Storing Data in Session State
+using ASP.NET Universal Providers</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a href="#Known_Issues">Known Issues</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a href="#Additional_Resources">Additional
+Resources</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo3;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a href="#Disclaimer">Disclaimer</a><o:p></o:p></span></p>
+
+<h2><a name="Installing_and_Configuring_ASP.NET_Unive"><span style='mso-fareast-font-family:
+"Times New Roman"'>Installing and Configuring ASP.NET Universal Providers</span></a><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>To install
+ASP.NET Universal Providers, you use a NuGet package, which installs all
+required files (including this documentation). The NuGet package automatically
+enables the new providers when it is installed. By default, the NuGet package
+configures provider to use SQL Server Express. To use SQL Server Compact or SQL
+Azure, you must change the connection string for the provider, as explained <a
+href="#Selecting_a_Data_Store">later in this document</a>.<o:p></o:p></span></p>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>To enable
+the providers, the NuGet package adds configuration entries in the <em><span
+style='font-family:"Calibri","sans-serif"'>web.config</span></em> file. The
+configuration for these providers is the same as the existing </span><code>SqlMembershipProvider</code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> class, but the </span><code>type</code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> parameter is set
+to the type of the new providers, as shown in the following table:<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt;
+ background:white;border-top:solid black 1.0pt;border-left:solid black 1.0pt;
+ border-bottom:none;border-right:none;mso-border-top-alt:solid black .75pt;
+ mso-border-left-alt:solid black .75pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt'>
+<!-- fpstyle: 36,011111100 -->
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;background:black;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:white'>SQL Provider Types<o:p></o:p></span></b></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;background:black;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:white'>Equivalent Type for Universal Providers<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Security.SqlMembershipProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Providers.DefaultMembershipProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Profile.SqlProfileProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Providers.DefaultProfileProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Security.SqlRoleProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Providers.DefaultRoleProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>(Built into default provider)</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><code>System.Web.Providers.DefaultSessionStateProvider</code><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+  "Times New Roman";color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>In the <em><span
+style='font-family:"Calibri","sans-serif"'>web.config</span></em> file, the
+configuration looks like the following example (the connection string has been
+wrapped for readability). The differences from the configuration for older
+SQL-based providers are highlighted. Notice that a section has been added to
+define custom session-state handling using a custom provider, as described
+later under <a href="#Storing_Data_in_Session_State_using_ASP">Storing Data in
+Session State using ASP.NET Universal Providers</a>.<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre>&lt;<span class=GramE>configuration</span>&gt;</pre><pre>&lt;<span
+class=GramE>connectionStrings</span>&gt;</pre><pre><span style='mso-spacerun:yes'>  </span>&lt;add name=&quot;<span
+class=SpellE>DefaultConnection</span>&quot;</pre><pre><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>connectionString</span></span>=&quot;Data Source=.\SQLEXPRESS;Initial Catalog=aspnetdb;Integrated Security=True&quot;</pre>
+    <pre><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>providerName</span></span>=&quot;<span
+class=SpellE>System.Data.SqlClient</span>&quot; /&gt;</pre><pre><span style='mso-spacerun:yes'>  </span>&lt;/connectionStrings&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>&lt;<span
+class=SpellE>system.web</span>&gt;</pre><pre><span style='mso-spacerun:yes'>    </span>&lt;membership <span
+class=SpellE><span class=highlight1>defaultProvider</span></span><span
+class=highlight1>=&quot;<span class=SpellE>DefaultMembershipProvider</span>&quot;</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>providers</span>&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;clear /&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;add name=&quot;<span
+class=SpellE>DefaultMembershipProvider</span>&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=GramE><span class=highlight1>type</span></span><span class=highlight1>=&quot;System.Web.Providers.DefaultMembershipProvider, <span
+class=SpellE>System.Web.Providers</span>, Version=1.0.0.0, Culture=neutral, <span
+class=SpellE>PublicKeyToken</span>=31bf3856ad364e35&quot; </span></pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>connectionStringName</span></span>=&quot;<span
+class=SpellE>DefaultConnection</span>&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>enablePasswordRetrieval</span></span>=&quot;false&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>enablePasswordReset</span></span>=&quot;true&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>requiresQuestionAndAnswer</span></span>=&quot;false&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>requiresUniqueEmail</span></span>=&quot;false&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>maxInvalidPasswordAttempts</span></span>=&quot;5&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>minRequiredPasswordLength</span></span>=&quot;6&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>minRequiredNonalphanumericCharacters</span></span>=&quot;0&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>passwordAttemptWindow</span></span>=&quot;10&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>applicationName</span></span>=&quot;/&quot; /&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;/providers&gt;</pre><pre><span style='mso-spacerun:yes'>    </span>&lt;/membership&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>    </span>&lt;profile <span
+class=SpellE><span class=highlight1>defaultProvider</span></span><span
+class=highlight1>=&quot;<span class=SpellE>DefaultProfileProvider</span>&quot;</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>providers</span>&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;clear /&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;add name=&quot;<span
+class=SpellE>DefaultProfileProvider</span>&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=GramE><span class=highlight1>type</span></span><span class=highlight1>=&quot;System.Web.Providers.DefaultProfileProvider, <span
+class=SpellE>System.Web.Providers</span>, Version=1.0.0.0, Culture=neutral, <span
+class=SpellE>PublicKeyToken</span>=31bf3856ad364e35&quot; </span></pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>connectionStringName</span></span>=&quot;<span
+class=SpellE>DefaultConnection</span>&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>applicationName</span></span>=&quot;/&quot; /&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;/providers&gt;</pre><pre><span style='mso-spacerun:yes'>    </span>&lt;/profile&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>    </span>&lt;<span
+class=SpellE>roleManager</span> <span class=SpellE><span class=highlight1>defaultProvider</span></span><span
+class=highlight1>=&quot;<span class=SpellE>DefaultRoleProvider</span>&quot; </span>enabled=&quot;false&quot;&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>providers</span>&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;clear /&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;add name=&quot;<span
+class=SpellE>DefaultRoleProvider</span>&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=GramE><span class=highlight1>type</span></span><span class=highlight1>=&quot;System.Web.Providers.DefaultRoleProvider, <span
+class=SpellE>System.Web.Providers</span>, Version=1.0.0.0, Culture=neutral, <span
+class=SpellE>PublicKeyToken</span>=31bf3856ad364e35&quot;</span></pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>connectionStringName</span></span>=&quot;<span
+class=SpellE>DefaultConnection</span>&quot;</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=SpellE><span class=GramE>applicationName</span></span>=&quot;/&quot; /&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;/providers&gt;</pre><pre><span style='mso-spacerun:yes'>    </span>&lt;/<span
+class=SpellE>roleManager</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>    </span>&lt;<span
+class=SpellE>sessionState</span> mode=&quot;Custom&quot; <span class=SpellE>customProvider</span>=&quot;<span
+class=SpellE>DefaultSessionProvider</span>&quot;&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>providers</span>&gt;</pre><pre><span style='mso-spacerun:yes'>        </span>&lt;add name=&quot;<span
+class=SpellE>DefaultSessionProvider</span>&quot;</pre><pre><span style='mso-spacerun:yes'>          </span><span style='mso-spacerun:yes'> </span><span
+class=GramE><span class=highlight1>type</span></span><span class=highlight1>=&quot;System.Web.Providers.DefaultSessionStateProvider, <span
+class=SpellE>System.Web.Providers</span>, Version=1.0.0.0, Culture=neutral, <span
+class=SpellE>PublicKeyToken</span>=31bf3856ad364e35&quot;</span></pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE><span class=GramE>connectionStringName</span></span>=&quot;<span
+class=SpellE>DefaultConnection</span>&quot;</pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE><span class=GramE>applicationName</span></span>=&quot;/&quot; /&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;/providers&gt;</pre><pre><span style='mso-spacerun:yes'>    </span>&lt;/<span
+class=SpellE>sessionState</span>&gt;</pre><pre><span style='mso-spacerun:yes'>  </span>&lt;/<span
+class=SpellE>system.web</span>&gt;</pre>
+
+<h2 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name="Selecting_a_Data_Store"><span style='mso-fareast-font-family:"Times New Roman"'>Selecting
+a Data Store</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>By default, the
+NuGet package sets the connection string to use a SQL Server Express database
+(wrapped here for readability):<o:p></o:p></span></p>
+
+<pre>&quot;Data Source=.\SQLEXPRESS;Initial Catalog=aspnetdb;Integrated Security=True&quot; providerName=&quot;System.Data.SqlClient&quot; </pre>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>If you want to use
+SQL Server Compact, change the connection string as shown in the following
+example:/o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre>&lt;<span class=GramE>connectionStrings</span>&gt;</pre><pre><span style='mso-spacerun:yes'>  </span>&lt;add name=&quot;DefaultConnection&quot; <span class=SpellE>connectionString</span>=&quot;Data Source=|DataDirectory|\aspnet.sdf&quot; </pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>providerName</span>=&quot;System.Data.SqlServerCe.4.0&quot;/&gt;</pre><pre>&lt;/connectionStrings&gt;</pre>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>If you want to use
+SQL Azure, change the connection string as shown in the following example
+(wrapped for readability):<o:p></o:p></span></p>
+
+<pre>&lt;<span class=GramE>connectionStrings</span>&gt;</pre><pre><span style='mso-spacerun:yes'>  </span>&lt;add name=&quot;DefaultConnection&quot; </pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>connectionString</span></span>=&quot;data source=<span
+class=SpellE><em><span style='font-family:"Courier New"'>myDNSName</span></em></span>;</pre><pre><span style='mso-spacerun:yes'>         </span>User ID=<span
+class=SpellE><em><span style='font-family:"Courier New"'>myUserName</span></em><span
+class=GramE>;Password</span></span>=<span class=SpellE><em><span
+style='font-family:"Courier New"'>myPassword</span></em></span>;</pre><pre><span style='mso-spacerun:yes'>         </span>Encrypt=<span
+class=SpellE>true<span class=GramE>;Trusted</span>_Connection</span>=false=false&quot;</pre>
+    <pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>providerName</span>=&quot;<span class=SpellE>System.Data.SqlClient</span>&quot;/&gt;</pre><pre>&lt;<span
+class=GramE>connectionStrings</span>&gt;</pre>
+
+<h2 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name="Storing_Data_in_Session_State_using_ASP"><span style='mso-fareast-font-family:
+"Times New Roman"'>Storing Data in Session State using ASP.NET Universal
+Providers</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>By default, ASP.NET
+stores session data using an in-process (in-memory) session provider. This
+provider allows you to put any object in session state, because session state
+simply holds a reference to the object, not the object itself.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>However, cloud
+environments might run your application on multiple computers. Therefore, for
+cloud-based applications, the application must store session state in some form
+of storage (like a database) that be accessed by more than one machine. This
+puts some restrictions on what data you store in session state — essentially,
+the data must be serializable. <o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>When you install
+ASP.NET Universal Providers, the installation process configures session state
+to use the </span><code>System.Web.Providers.DefaultSessionStateProvider</code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> type, as shown in
+the <em><span style='font-family:"Calibri","sans-serif"'>web.config</span></em>
+file example earlier. This type stores session state in a database. </span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Session data must
+be serializable. If you attempt to store something in session state that is not
+serializable, you will receive the following error: <o:p></o:p></span></p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=GramE><code>Unable to serialize the session state.</code></span><code> In
+'<span class=SpellE>StateServer</span>' and '<span class=SpellE>SQLServer</span>'
+mode, ASP.NET will serialize the session state objects, and as a result
+non-serializable objects or <span class=SpellE>MarshalByRef</span> objects are
+not permitted. <span class=GramE>the</span> same restriction applies if similar
+serialization is done by the custom session state store in 'Custom' mode.</code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif";mso-fareast-font-family:
+"Times New Roman"'> <o:p></o:p></span></p>
+
+</blockquote>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>There are two ways
+to resolve this issue: by marking the type as serializable or by using a
+surrogate serializer.</span><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<h3 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-fareast-font-family:"Times New Roman"'>Marking Types as Serializable<o:p></o:p></span></h3>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>If you have access
+to the source code for the type that is being stored in session state, you can
+mark the type using the </span><code>Serializable</code><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'> attribute, as in the following
+example. If the type contains additional classes, all the contained classes
+must be serializable as well.<o:p></o:p></span></p>
+
+<pre><span class=highlight1>[Serializable]</span></pre><pre><span class=GramE>public</span> class Address { }</pre><pre><o:p>&nbsp;</o:p></pre><pre><span
+class=highlight1>[Serializable]</span></pre><pre><span class=GramE>public</span> class Person { </pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>public</span> Address Work;</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>public</span> Address Home; </pre><pre>}</pre>
+
+<h3 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-fareast-font-family:"Times New Roman"'>Using a Surrogate Serializer
+in .NET Framework 4.5<o:p></o:p></span></h3>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>If it's not
+practical to mark the type as serializable in source code, and if you are using
+.NET Framework 4.5, you can use a surrogate serializer. (This technique does
+not work in .NET Framework&nbsp;4.)</span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Create a class that
+implements the </span><code><a
+href="http://msdn.microsoft.com/en-us/library/system.runtime.serialization.iserializationsurrogate.aspx">ISerializationSurrogate</a></code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> interface.&nbsp;
+In this class, you implement </span><code><a
+href="http://msdn.microsoft.com/en-us/library/system.runtime.serialization.iserializationsurrogate.getobjectdata.aspx">GetObjectData</a></code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> and </span><code><a
+href="http://msdn.microsoft.com/en-us/library/system.runtime.serialization.iserializationsurrogate.setobjectdata.aspx">SetObjectData</a></code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> methods in order
+to serialize and deserialze the data, respectively. In </span><code>GetObjectData</code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> you invoke </span><code><a
+href="http://msdn.microsoft.com/en-us/library/system.runtime.serialization.serializationinfo.addvalue.aspx">SerializationInfo.AddValue</a></code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> (using the
+appropriate overload for the data type of your data) to add individual fields
+of the object to serialize to a </span><code><a
+href="http://msdn.microsoft.com/en-us/library/system.runtime.serialization.serializationinfo.aspx">SerializationInfo</a></code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> object. In </span><code>SetObjectData</code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> you extract the
+serialized version back to its original value in the object. Here's an example:<o:p></o:p></span></p>
+
+<pre>public class EmployeeSerializationSurrogate : ISerializationSurrogate</pre><pre>{</pre><pre><span style='mso-spacerun:yes'>    </span>// Serialize the Employee object to save the object name and address fields.</pre><pre><span style='mso-spacerun:yes'>    </span>public void GetObjectData(Object obj, SerializationInfo info, StreamingContext context)</pre><pre><span style='mso-spacerun:yes'>    </span>{</pre><pre><span style='mso-spacerun:yes'>        </span>Employee emp = (Employee)obj;</pre><pre><span style='mso-spacerun:yes'>        </span>info.AddValue(&quot;name&quot;, emp.name);</pre><pre><span style='mso-spacerun:yes'>        </span>info.AddValue(&quot;address&quot;, emp.address);</pre><pre><span style='mso-spacerun:yes'>    </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>    </span>// Deserialize the Employee object to set the object name and address fields.</pre><pre><span style='mso-spacerun:yes'>    </span>public Object SetObjectData(Object obj, SerializationInfo info, StreamingContext context,</pre><pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>    </span>ISurrogateSelector selector)</pre><pre><span style='mso-spacerun:yes'>    </span>{</pre><pre><span style='mso-spacerun:yes'>        </span>Employee emp = (Employee)obj;</pre><pre><span style='mso-spacerun:yes'>        </span>emp.name = info.GetString(&quot;name&quot;);</pre><pre><span style='mso-spacerun:yes'>        </span>emp.address = info.GetString(&quot;address&quot;);</pre><pre><span style='mso-spacerun:yes'>        </span>return null;</pre><pre><span style='mso-spacerun:yes'>    </span>}</pre><pre>}</pre>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>You then register
+the serializer and the class to be serialized using the </span><code><a
+href="http://msdn.microsoft.com/en-us/library/system.runtime.serialization.surrogateselector.aspx">SurrogateSelector</a></code><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> class in code,
+like this:</span></p>
+
+<pre>protected void Page_Load(object sender, EventArgs e)</pre><pre>{</pre><pre><span style='mso-spacerun:yes'>    </span><span
+class=highlight1>SurrogateSelector ss = new SurrogateSelector();</span></pre><pre><span style='mso-spacerun:yes'>    </span><span
+class=highlight1>ss.AddSurrogate(typeof(Employee), new StreamingContext(StreamingContextStates.All), new EmployeeSerializationSurrogate());</span></pre><pre><span style='mso-spacerun:yes'>    </span><span
+class=highlight1>SessionStateUtility.SerializationSurrogateSelector = ss;</span></pre><pre>}</pre>
+
+<h2 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name="Known_Issues"><span style='mso-fareast-font-family:"Times New Roman"'>Deploying
+to a Cloud Environment<o:p></o:p></span></a></h2>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Known_Issues'><span style='font-size:11.0pt;font-family:
+"Calibri","sans-serif"'>If you are deploying to a cloud environment that has
+multiple web server instances, you should change session state mode from
+&quot;InProc&quot; to &quot;Custom&quot;.<span style='mso-spacerun:yes'> 
+</span>In addition, change the connection string named
+&quot;DefaultConnection&quot; to connect to an instance of SQL Server
+(including SQL Azure and <span class=GramE>SQL<span style='mso-spacerun:yes'> 
+</span>Compact</span>) instead of to SQL Server Express.<o:p></o:p></span></span></p>
+
+<h2 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bookmark:Known_Issues'><span style='mso-fareast-font-family:"Times New Roman"'>Known
+Issues</span></span><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo5;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-bidi-font-size:11.0pt;
+font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>During
+the installation process, NuGet performs an exact match on items in the <em><span
+style='font-family:"Calibri","sans-serif"'>web.config</span></em> file. If you
+have customized any of the elements in <em><span style='font-family:"Calibri","sans-serif"'>web.config</span></em>
+that are updated by the installation process for ASP.NET Universal Providers,
+the installation process will not find these elements. Instead of updating the
+elements, the installation process will assume that they do not exist and add
+them. As a result, the <em><span style='font-family:"Calibri","sans-serif"'>web.config</span></em>
+will effectively contain duplicate elements.<o:p></o:p></span></p>
+
+<p style='margin-left:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>If your application
+is experiencing issues that indicate problems in the <em><span
+style='font-family:"Calibri","sans-serif"'>web.config</span></em> file, make
+sure that the file contains the elements that are illustrated earlier in this
+document and remove any duplicate elements.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo5;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'>If you are working in Visual Studio
+and use <strong><span style='font-family:"Calibri","sans-serif"'>Server
+Explorer</span></strong> to open the database that contains the membership,
+role, profile, or session provider tables, and if you then try to run the
+application, you might see an error like the following: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><code>Cannot
+open database &quot;aspnet&quot; requested by the login. The login failed.
+Login failed for user 'yourname.'</code><span style='font-size:11.0pt;
+font-family:"Calibri","sans-serif";mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p style='margin-left:.5in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=GramE><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>To
+resolve this issue, right-click the database in <strong><span style='font-family:
+"Calibri","sans-serif"'>Server Explorer</span></strong> and then click <strong><span
+style='font-family:"Calibri","sans-serif"'>Close Connection</span></strong>.</span></span><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'> <o:p></o:p></span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo5;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-bidi-font-size:11.0pt;
+font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>The
+new providers do not use the same tables, stored procedures, and database
+objects as the SQL-based providers. If you switch to the new providers in an
+existing application, the data from the existing tables will not be available.
+We are considering creating a conversion utility to help you move existing
+applications to the new providers.<o:p></o:p></span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo5;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-bidi-font-size:11.0pt;
+font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Web
+Parts personalization will not work with Universal Providers. You must use the
+SQL Personalization provider. That in turn does not work with LocalDB, so you
+must use SQL Server Express.<o:p></o:p></span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l4 level1 lfo5;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-bidi-font-size:11.0pt;
+font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>This
+release requires that the ASP.NET application be running under full trust.<o:p></o:p></span></p>
+
+<h2 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name="Additional_Resources"><span style='mso-fareast-font-family:"Times New Roman"'>Additional
+Resources</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo9;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="http://msdn.microsoft.com/en-us/library/tw292whz.aspx">Managing Users by
+Using Membership</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo9;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="http://msdn.microsoft.com/en-us/library/9ab2fxh0.aspx">Managing
+Authorization Using Roles</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo9;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="http://msdn.microsoft.com/en-us/library/014bec1k.aspx">ASP.NET Profile
+Providers</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo9;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="http://msdn.microsoft.com/en-us/library/ee336241.aspx">Microsoft SQL Azure</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo9;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=033cfb76-5382-44fb-bc7e-b3c8174832e2">Microsoft
+SQL Server Compact</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo9;tab-stops:list .5in'><![if !supportLists]><span
+style='mso-bidi-font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+mso-fareast-font-family:"Times New Roman"'><a
+href="http://docs.nuget.org/docs/creating-packages/configuration-file-and-source-code-transformations">Configuration
+File and Source Code Transformations</a><o:p></o:p></span></p>
+
+<h2 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name=Disclaimer><span style='mso-fareast-font-family:"Times New Roman"'>Disclaimer</span></a><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>This is a
+preliminary document and may be changed substantially prior to final commercial
+release of the software described herein.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>The information contained
+in this document represents the current view of Microsoft Corporation on the
+issues discussed as of the date of publication. Because Microsoft must respond
+to changing market conditions, it should not be interpreted to be a commitment
+on the part of Microsoft, and Microsoft cannot guarantee the accuracy of any
+information presented after the date of publication.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>This White Paper is
+for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS,
+IMPLIED OR STATUTORY, AS TO THE INFORMATION IN THIS DOCUMENT.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Complying with all
+applicable copyright laws is the responsibility of the user. Without limiting
+the rights under copyright, no part of this document may be reproduced, stored
+in or introduced into a retrieval system, or transmitted in any form or by any
+means (electronic, mechanical, photocopying, recording, or otherwise), or for
+any purpose, without the express written permission of Microsoft Corporation. <o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Microsoft may have
+patents, patent applications, trademarks, copyrights, or other intellectual
+property rights covering subject matter in this document. <span class=GramE>Except
+as expressly provided in any written license agreement from Microsoft, the
+furnishing of this document does not give you any license to these patents,
+trademarks, copyrights, or other intellectual property.</span><o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Unless otherwise
+noted, the example companies, organizations, products, domain names, e-mail
+addresses, logos, people, places and events depicted herein are fictitious, and
+no association with any real company, organization, product, domain name, email
+address, logo, person, place or event is intended or should be inferred.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>© 2011 Microsoft
+Corporation. All rights reserved.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>Microsoft and
+Windows are either registered trademarks or trademarks of Microsoft Corporation
+in the United States and/or other countries.<o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'>The names of actual
+companies and products mentioned herein may be the trademarks of their
+respective owners.<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
