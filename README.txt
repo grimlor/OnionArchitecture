@@ -6,7 +6,7 @@ Matt Hidinger on the topic.
 
 Usage
 =====
-The project, sans the .pkg file in the root, can be used as-isif you wish. 
+The project, sans the .pkg file in the root, can be used as-is if you wish. 
 Readme files are provided for each layer of the onion. However, it is highly 
 recommended that you download Templify and move the provided template, the 
 .pkg file, to the templates folder. The location of that folder as of this 
