@@ -9,8 +9,8 @@ Usage
 The project, sans the .pkg file in the root, can be used as-is, if you wish. 
 Readme files are provided for each layer of the onion. However, it is highly 
 recommended that you download Templify and move the provided template, the 
-.pkg file, to the templates folder. The location of that folder as of this 
-writing is as follows:
+.pkg file, to the templates folder. The location of that folder, as of this 
+writing, is as follows:
 
 %UserProfile%\AppData\Roaming\Endjin\Templify\repo
 
