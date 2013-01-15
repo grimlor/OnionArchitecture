@@ -15,8 +15,11 @@ Check "Allow NuGet to download missing packages during build.
 
 Readme files are provided for each layer of the onion. However, it is highly 
 recommended that you download Templify and move the provided template, the 
-.pkg file, to the templates folder. The location of that folder, as of this 
-writing, is as follows:
+.pkg file, to the templates folder. Templify is available here:
+
+http://opensource.endjin.com/templify/
+
+The location of that folder, as of this writing, is as follows:
 
 %UserProfile%\AppData\Roaming\Endjin\Templify\repo
 
