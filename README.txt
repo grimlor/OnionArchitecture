@@ -24,8 +24,13 @@ The location of that folder, as of this writing, is as follows:
 %UserProfile%\AppData\Roaming\Endjin\Templify\repo
 
 Once you copy the template .pkg file into that location, you can right-click 
-on any folder and choose Templify Here to create a new project using the Onion 
-Architecture.
+on any folder and choose Templify Here to create a new solution in that folder 
+using the Onion Architecture. 
+
+This package includes an MVC 4 project for the UI. If you don't currently have 
+MVC 4 installed, you will get an error that the project cannot be loaded. Feel 
+free to delete it and create an MVC 3 project or any other web project of your 
+choosing.
 
 Useful Links
 ============
