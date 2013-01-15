@@ -3,8 +3,8 @@ implementations. This is done using an Inversion of Control (IoC) container
 such as SimpleInjector, Unity, Castle Windsor, or Ninject. There should be no 
 logic unrelated to this functionality in this project.
 
-Whatever IoC container is used, it needs to implement the IServiceLocator
-interface defined in Core.
+Whatever IoC container is used, it needs to implement the IServiceLocator 
+interface defined in Core and initialize this concrete implementation.
 
 This project will have references to any of the other projects in the 
 application implementing interfaces in the Core. Oftentimes, this will 

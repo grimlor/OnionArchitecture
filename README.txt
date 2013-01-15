@@ -6,7 +6,13 @@ Matt Hidinger on the topic.
 
 Usage
 =====
-The project, sans the .pkg file in the root, can be used as-is, if you wish. 
+The project, sans the .pkg file in the root, can be used as-is with one 
+configuration note; you'll need to enable NuGet package restore in Visual 
+Studio as follows:
+
+Tools -> Options -> Package Manager -> General -> Package Restore
+Check "Allow NuGet to download missing packages during build.
+
 Readme files are provided for each layer of the onion. However, it is highly 
 recommended that you download Templify and move the provided template, the 
 .pkg file, to the templates folder. The location of that folder, as of this 

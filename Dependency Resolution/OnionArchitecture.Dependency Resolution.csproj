@@ -51,10 +51,6 @@
       <Project>{6588B26C-D17B-4B97-AF37-232D4DC7BA8D}</Project>
       <Name>OnionArchitecture.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UI\MVC4\OnionArchitecture.UI.MVC4.csproj">
-      <Project>{085ED086-6496-4926-A0BD-682189B3FF7A}</Project>
-      <Name>OnionArchitecture.UI.MVC4</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
