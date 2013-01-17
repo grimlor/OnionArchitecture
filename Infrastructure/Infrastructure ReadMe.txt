@@ -4,18 +4,15 @@ The projects in this folder should have no business logic. Such code should be
 in Core which, if the business logic needs to persist the data, will end up
 using an interface to utilize an infrastructure concern.
 
-Infrastructure projects are also where implementation of helper classes, such 
-as mappers for UI models to Core entities, should exist. Interfaces for these
-will exist in the appropriate project. Most interfaces will be in Core. 
-However, if services need to be provided for objects that are clearly specific 
-to another project's needs, then the interface may be created in that project.
-Mappers, for example, may have interfaces in the UI project.
+Infrastructure projects are also where implementation of cross-cuttomg helper 
+classes, such as logging, should exist. Interfaces for these should also be in 
+Core. 
 
 This design pattern allows for ease of application maintenance as these
 components, which are more likely to change over time than business logic, are 
 decoupled from the rest of the application.
 
 The only references projects in this folder should have to other projects is to 
-Core and UI.
+Core.
 
-Be sure to change the project's build target to the UI layer's bin folder.
+Be sure to change the project's build target to the UI project's bin folder.

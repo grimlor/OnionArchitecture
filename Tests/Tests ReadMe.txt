@@ -10,12 +10,12 @@ Arrange/Act/Assert pattern. Details can be found at the link below:
 
     http://c2.com/cgi/wiki?ArrangeActAssert
 
-This project may reference any layer necessary for testing. The best practice 
+This project may reference any project necessary for testing. The best practice 
 is to reference as few projects as necessary, preferring interfaces over 
 implementation, and allowing the IoC container to perform resolution. This 
 allows for proper testing of the implementations of the interfaces. 
 
-One an example of a project reference that does not conform to the testing of 
+One example of a project reference that does not conform to the testing of 
 interface over implementation best practice is the UI. For this reason, you may 
 wish to split UI testing into its own project.
 

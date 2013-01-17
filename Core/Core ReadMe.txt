@@ -18,4 +18,4 @@ dependency resolution. It should also contain the definition of the
 IServiceLocator interface for the IoC container used by the 
 DependencyResolution project.
 
-Be sure to change the project's build target to the UI layer's bin folder.
+Be sure to change the project's build target to the UI project's bin folder.
