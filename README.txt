@@ -1,8 +1,15 @@
 Description
 ===========
-This solution contains an implementation and Templify template of Jeffrey 
-Palermo's Onion Architecture. The implementation closely reflects work done by 
-Matt Hidinger on the topic.
+If you haven't heard of the Onion Architecture, you wouldn't be alone. However, 
+it's been around for a while under the name of Hexagonal Architecture, due 
+solely to a graphic created when Alistair Cockburn first described it. It's 
+also known as the Ports & Adapters Pattern. The Onion Architecture version of 
+this pattern described by Jeffrey Palermo was the most understandable to me. I 
+dug around for a while until I could find someone who implemented a sample 
+project using the Onion Architecture and came across Matt Hidinger's 
+presentation he did for the Chicago Code Camp last year. I destructed his 
+sample project, documented it, and rebuilt it in a shape I felt I could teach 
+and support. I then Templified it.
 
 Usage
 =====
