@@ -19,5 +19,3 @@ still an anti-pattern to have interfaces in the UI or Test projects requiring
 external resolution. Rather, implement a factory for such events or simply 
 instantiate the object fulfilling the contract in the interface. If the 
 interface is anticipated to be needed in other projects, promote it to Core.
-
-Be sure to change the project's build target to the UI project's bin folder.

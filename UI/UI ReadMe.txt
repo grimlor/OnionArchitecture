@@ -15,7 +15,6 @@ http://sedodream.com/2010/05/01/WebDeploymentToolMSDeployBuildPackageIncludingEx
 You will also need to do a Build Solution before creating the deployment 
 package.
 
-The only reference projects in this folder should have is to Core and, if 
-necessary, to Dependency Resolution so that the IoC container may be 
-initialized. This is unnecessary for web technologies used in IIS. See the 
-readme in Dependency Resolution for further information.
+The only reference projects in this folder should have is to Core and 
+Dependency Resolution so that the IoC container may be initialized and 
+dependencies get included in the UI.

@@ -46,7 +46,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.UI.MVC4", "UI\MVC4\OnionArchitecture.UI.MVC4.csproj", "{085ED086-6496-4926-A0BD-682189B3FF7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Tests", "Tests\OnionArchitecture.Tests.csproj", "{5F636652-835A-4455-A034-F3FB43101D74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Tests.MSTest", "Tests\OnionArchitecture.Tests.MSTest.csproj", "{5F636652-835A-4455-A034-F3FB43101D74}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{642F1F14-91B4-48A9-B4F1-F598B415F7D6}"
 	ProjectSection(SolutionItems) = preProject

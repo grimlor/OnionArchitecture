@@ -39,6 +39,14 @@ MVC 4 installed, you will get an error that the project cannot be loaded. Feel
 free to delete it and create an MVC 3 project or any other web project of your 
 choosing.
 
+Due to popular demand, I have also included an implementation of the IoC 
+container. I chose to use SimpleInjector as it is extremely lightweight DI 
+API and easily replaced if/when you decide to use a more robust API such as 
+Unity or Ninject.
+
+I will keep the template without SimpleInjector for those who feel confident 
+implementing the pattern with another DI API.
+
 Useful Links
 ============
 Below are links to the inspirations and tools used in this project.
